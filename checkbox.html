@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="./css/stylecheck.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="logo">
+            <p class="logo__company">bingo</p>
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link">Калькулятор</a>
+              </li>
+              <li class="menu__item">
+                <a href="./checkbox.html" class="menu__link menu__list--active"
+                  >Чекбоксы</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="checkbox">
+        <div class="container">
+          <h1 class="checkbox__title">Чек-лист технического аудита</h1>
+          <div class="block-name">
+            <span class="block-info__list block-info__list--margin">
+              <input type="checkbox" name="first1" id="feature1" />
+              <label for="feature1">Title </label>
+            </span>
+            <button class="accordion" onclick="showBlock('block1')"></button>
+          </div>
+          <div id="block1" class="block">
+            <p class="block-info__text">
+              Title это специальный HTML-тег, который содержит в себе краткое и
+              лаконичное описание контента, содержащегося на странице. Тег
+              <b>title</b> располагается в невидимой части страницы (в блоке
+              HEAD), однако его содержимое можно увидеть на вкладках браузера,
+              либо в сниппете выдачи поисковых систем.Справка
+              <a
+                class="inform-link"
+                href="https://site-analyzer.ru/articles/kak-pravilno-sostavit-title/"
+                >Гугла</a
+              >
+            </p>
+            <ul class="block-info__item">
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature2" />
+                <label for="feature2">
+                  Должен присутствовать на всех страницах сайта
+                  <a
+                    href="https://site-analyzer.ru/articles/kak-pravilno-sostavit-title/"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature3" />
+                <label class="block-info__check" for="feature3">
+                  Должен содержать ключевые фразы
+                  <a
+                    href="https://site-analyzer.ru/articles/kak-pravilno-sostavit-title/"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature4" />
+                <label class="block-info__check" for="feature4">
+                  Должен быть уникальным и отличаться от H1
+                  <a
+                    href="https://site-analyzer.ru/articles/kak-pravilno-sostavit-title/"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature5" />
+                <label class="block-info__check" for="feature5">
+                  Для продвижения региона должен быть указан город
+                  <a
+                    href="https://site-analyzer.ru/articles/kak-pravilno-sostavit-title/"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature6" />
+                <label class="block-info__check" for="feature6">
+                  Оптимальная длина не более 6-10 слов и не более 60символов
+                  <a
+                    href="https://site-analyzer.ru/articles/kak-pravilno-sostavit-title/"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature7" />
+                <label class="block-info__check" for="feature7">
+                  Для нецелевых страниц генерация по шаблону с использованием
+                  коммерческих слов: купить, цена, интернет-магазин, гор и пр.
+                  <a
+                    href="https://site-analyzer.ru/articles/kak-pravilno-sostavit-title/"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+            </ul>
+          </div>
+          <!-- ------------------- -->
+          <div class="block-name">
+            <span class="block-info__list block-info__list--margin">
+              <input type="checkbox" name="first1" id="feature8" />
+              <label for="feature8">Description </label>
+            </span>
+            <button class="accordion" onclick="showBlock('block2')"></button>
+          </div>
+          <div id="block2" class="block">
+            <p class="block-info__text">
+              <b>Мета</b> тег description (мета-описание, «дескрипшн»)
+              предназначен для создания краткого описания html-страницы. Его
+              содержимое может использоваться поисковыми системами для
+              формирования сниппета. Данный тег не влияет на внешний вид
+              страницы, так как является служебной информацией. Он располагается
+              в блоке head html кода страницы.Справка
+              <a
+                class="inform-link"
+                href="https://wiki.rookee.ru/meta-teg-description/"
+                >Гугла</a
+              >
+            </p>
+            <ul class="block-info__item">
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature9" />
+                <label for="feature9">
+                  Размер мета тега description в Яндекс и Google не должен
+                  превышать 140-200 символов
+                  <a
+                    href="https://wiki.rookee.ru/meta-teg-description"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature10" />
+                <label class="block-info__check" for="feature10">
+                  Правильный description должен содержать ключевые слова, по
+                  которым оптимизируется данная страница.
+                  <a
+                    href="https://wiki.rookee.ru/meta-teg-description"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature11" />
+                <label class="block-info__check" for="feature11">
+                  Тег должен описывать содержание конкретной страницы.
+                  <a
+                    href="https://wiki.rookee.ru/meta-teg-description"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature12" />
+                <label class="block-info__check" for="feature12">
+                  Описания в meta тегах description должны быть уникальными для
+                  всех страниц сайта
+                  <a
+                    href="https://wiki.rookee.ru/meta-teg-description"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature13" />
+                <label class="block-info__check" for="feature13">
+                  Тег description должен отличаться от тега title.
+                  <a
+                    href="https://wiki.rookee.ru/meta-teg-description"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature14" />
+                <label class="block-info__check" for="feature14">
+                  Description должен быть привлекательным для пользователей
+                  <a
+                    href="https://wiki.rookee.ru/meta-teg-description"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+            </ul>
+          </div>
+          <!-- -------------------------- -->
+          <div class="block-name">
+            <span class="block-info__list block-info__list--margin">
+              <input type="checkbox" name="first1" id="feature15" />
+              <label for="feature15">Sitemap </label>
+            </span>
+            <button class="accordion" onclick="showBlock('block3')"></button>
+          </div>
+          <div id="block3" class="block">
+            <p class="block-info__text">
+              <b>Sitemaps</b> — XML-файлы с информацией для поисковых систем
+              (таких как Google, Bing, Яндекс) о страницах веб-сайта, которые
+              подлежат индексации. Sitemaps могут помочь поисковикам определить
+              местонахождение страниц сайта, время их последнего обновления,
+              частоту обновления и важность относительно других страниц сайта
+              для того, чтобы поисковая машина смогла более разумно
+              индексировать сайт. Использование протокола Sitemaps не является
+              гарантией того, что веб-страницы будут проиндексированы поисковыми
+              системами, это всего лишь дополнительная подсказка для сканеров,
+              которые смогут выполнить более тщательное сканирование
+              сайтаюСправка
+              <a
+                class="inform-link"
+                href="https://ru.wikipedia.org/wiki/Sitemaps"
+                >Гугла</a
+              >
+            </p>
+            <ul class="block-info__item">
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature16" />
+                <label for="feature16">
+                  Исключить мусорные, дубли и запрещенные страницы в robots.txt.
+                  <a
+                    href="https://business-online.su/blog/chek-list-dlya-provedeniya-audita-sayta/"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature17" />
+                <label class="block-info__check" for="feature17">
+                  Указать верный протокол сайта http/https и ссылки с www или
+                  без www.
+                  <a
+                    href="https://business-online.su/blog/chek-list-dlya-provedeniya-audita-sayta/"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature18" />
+                <label class="block-info__check" for="feature18">
+                  Из обязательных XML-тегов должны быть urlset, url, loc.
+                  <a
+                    href="https://business-online.su/blog/chek-list-dlya-provedeniya-audita-sayta/"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature19" />
+                <label class="block-info__check" for="feature19">
+                  Должен содержать не более 50 000 ссылок и весить не более
+                  10Мб.
+                  <a
+                    href="https://business-online.su/blog/chek-list-dlya-provedeniya-audita-sayta/"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+              <li class="block-info__list">
+                <input type="checkbox" name="first1" id="feature20" />
+                <label class="block-info__check" for="feature20">
+                  Тег description должен отличаться от тега title.
+                  <a
+                    href="https://business-online.su/blog/chek-list-dlya-provedeniya-audita-sayta/"
+                    class="inform-link"
+                    >справки</a
+                  >
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="generateSpecification()" class="btn-create">
+            Создать
+          </button>
+          <div id="specification"></div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/check.js"></script>
+  </body>
+</html>
