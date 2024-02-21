@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="logo">
+            <p class="logo__company">bingo</p>
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link menu__list--active"
+                  >Калькулятор</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="./checkbox.html" class="menu__link">Чекбоксы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h2 class="header__subtitle">
+          От вашего выбора корма зависит жизнь вашего питомца
+        </h2>
+      </div>
+    </header>
+    <main class="main">
+      <aside class="calculator">
+        <div class="container">
+          <div class="calculator-block">
+            <div class="calcutor-blockleft">
+              <h2 class="calcutor-blockleft__title">Калькулятор корма еды</h2>
+              <p class="calcutor-blockleft__subtitle">
+                Для расчёта необходимо ввести данные о питомце в форму: порода,
+                возраст, активность, а также вес.
+              </p>
+            </div>
+            <div class="calcutor-blockright">
+              <form class="calculator__form">
+                <div class="calculator__control">
+                  <label class="calculator__label" for="breed">Порода:</label>
+                  <select
+                    class="calculator__select"
+                    id="breed"
+                    name="breed"
+                    required
+                  >
+                    <option
+                      value=""
+                      hidden
+                      disabled="disabled"
+                      selected="selected"
+                    >
+                      Выбрать
+                    </option>
+                    <option value="shepherdDog">Овчарка</option>
+                    <option value="labrador">Лабрадор</option>
+                  </select>
+                </div>
+                <div class="calculator__control">
+                  <label class="calculator__label" for="age">Возраст:</label>
+                  <select
+                    class="calculator__select"
+                    name="age"
+                    id="age"
+                    required
+                  >
+                    <option
+                      value=""
+                      hidden
+                      disabled="disabled"
+                      selected="selected"
+                    >
+                      Выбрать
+                    </option>
+                    <option value="lessOne">Меньше 1 года</option>
+                    <option value="oneToFive">от 1 года до 5 лет</option>
+                    <option value="moreFive">Более 5 лет</option>
+                  </select>
+                </div>
+                <div class="calculator__control">
+                  <p class="calculator__label">Активность:</p>
+                  <input
+                    type="radio"
+                    name="activity"
+                    id="temperate"
+                    value="temperate"
+                    required
+                  />
+                  <label class="calculator__label" for="temperate"
+                    >Умеренный</label
+                  >
+                  <input
+                    type="radio"
+                    name="activity"
+                    id="active"
+                    value="active"
+                    required
+                  />
+                  <label class="calculator__label" for="active">Активный</label>
+                </div>
+                <div class="calculator__control">
+                  <label class="calculator__label" for="weight">Вес:</label>
+                  <input
+                    type="number"
+                    id="weight"
+                    name="weight"
+                    min="0"
+                    max="30"
+                    step="1"
+                    value=""
+                    required
+                  />
+                </div>
+                <button type="submit" class="calculator__button">
+                  Расчитать
+                </button>
+              </form>
+              <h2 class="calculator__result">
+                Итог - <span>0</span>
+                гр.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
